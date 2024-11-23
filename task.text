@@ -1,0 +1,67 @@
+          +-------------------+
+          |       User         |
+          +-------------------+
+          | - id               |
+          | - name             |
+          | - contactInfo      |
+          +-------------------+
+          | + getId()          |
+          | + getName()        |
+          | + getContactInfo() |
+          +-------------------+
+                    ^
+                    |
+        +-----------+----------+
+        |                      |
++---------------+      +----------------+
+|  Customer     |      |    Librarian    |
++---------------+      +----------------+
+| - borrowedBooks[]    |                |
+| + borrowBook()       | + addBook()    |
+| + returnBook()       | + removeBook() |
++---------------+      +----------------+
+
++---------------------+
+|        Book          |
++---------------------+
+| - title              |
+| - author             |
+| - year               |
+| - ISBN               |
+| - copiesAvailable    |
++---------------------+
+| + getTitle()         |
+| + getAuthor()        |
+| + getYear()          |
+| + getISBN()          |
+| + getCopiesAvailable()|
+| + borrowCopy()       |
+| + returnCopy()       |
++---------------------+
+
++--------------------------+
+|         Library           |
++--------------------------+
+| - books[]                 |
+| - borrowRecords[]         |
++--------------------------+
+| + addBook()               |
+| + removeBook()            |
+| + searchBookByTitle()     |
+| + searchBookByAuthor()    |
+| + borrowBook()            |
+| + returnBook()            |
+| + displayBorrowRecords()  |
++--------------------------+
+
++--------------------------+
+|       BorrowRecord        |
++--------------------------+
+| - user                    |
+| - book                    |
+| - borrowDate              |
++--------------------------+
+| + getUser()               |
+| + getBook()               |
+| + getBorrowDate()         |
++--------------------------+
