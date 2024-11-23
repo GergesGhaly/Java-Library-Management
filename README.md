@@ -36,23 +36,19 @@ Defines the type of user (Customer or Librarian).
 Example Usage
 Adding a Book to the Library:
 
-java
-Copy code
 Librarian librarian = new Librarian(1, "Ahmed", 123456789, UserType.LIBRARIAN);
 Book newBook = new Book("Java Programming", "John Doe", 2024, 5);
 librarian.addBook(newBook, library);
 Borrowing a Book:
 
-java
-Copy code
+
 Customer customer = new Customer(2, "Ali", 987654321, UserType.CLIENT);
 Book bookToBorrow = library.searchBookByTitle("Java Programming");
 customer.borrowBook(bookToBorrow, library);
 Returning a Book:
 
-java
-Copy code
 customer.returnBook(bookToBorrow, library);
+
 Technologies Used
 Java
 OOP (Object-Oriented Programming)
